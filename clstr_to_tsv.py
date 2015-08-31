@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import os
-from clstr_parser import ClusterParser
+from clstr_parser import ClusterParser, write_tsv, write_tsv_file
 from optparse import OptionParser
 
 def main():
@@ -22,9 +22,9 @@ def main():
 	parser.read_file(args[0])
 
 	if options.filename:
-		parser.write_tsv_file(options.filename)
+		write_tsv_file(parser, options.filename)
 	else:
-		parser.write_tsv()
+		write_tsv(parser)
 
 if __name__ == '__main__':
 	main()
