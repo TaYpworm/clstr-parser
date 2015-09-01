@@ -17,7 +17,9 @@ Example:
 
 The desired output of this example is:
 
+```
 '4\ticeplant_tr_11521\tMCGI0001S00008421\t0.9969'
+```
 
 The parsed data is not generally usable because it ignores important clstr fields,
 and is designed to structure output data in a bizarre way.
